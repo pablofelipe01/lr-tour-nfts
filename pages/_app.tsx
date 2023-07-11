@@ -10,6 +10,7 @@ import {
 
 import "../styles/globals.css";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 // This is the chain your dApp will work on.
 // Change this to the chain your app is built for.
@@ -25,15 +26,16 @@ function MyApp({ Component, pageProps }: AppProps) {
             paperWallet ({clientId: '70a6b02d-c10d-45e8-bf62-d14b106473b0'}),
            
           ]}
-          
     >
         <Navbar />  
-    
-    
-    
       <Component {...pageProps} />
+      <Footer />
     </ThirdwebProvider>
   );
 }
 
 export default MyApp;
+          
+    
+    
+    
