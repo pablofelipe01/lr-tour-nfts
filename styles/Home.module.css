@@ -1,8 +1,15 @@
+
 .container {
   width: 100%;
   max-width: 1440px;
   padding: 0 1rem;
   margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .gradientText0 {
@@ -70,9 +77,15 @@
 
 .grid {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    align-items: center;
+  }
 }
 
 .card {
@@ -82,23 +95,39 @@
   text-decoration: none;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 440px;
-  overflow: none;
-  border: none;
+  max-width: 600px; /* Adjust the max-width as needed */
+  margin: 0 auto; /* Center the card horizontally */
+  padding: 2rem; /* Add padding to increase the card size */
+  box-sizing: border-box; /* Include padding in the width calculation */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 0 10px rgb(255, 217, 4);
 }
+
+
 
 .cardText {
   padding: 1rem;
 }
-
-.card img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 4px 4px 0 0;
-  margin-bottom: 12px;
+.card {
+  background-color: #131313;
+  text-align: center;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 440px;
+  overflow: hidden;
   border: none;
+  padding: 20px; /* Add the desired padding value */
+  margin-bottom: 20px; /* Add the desired margin-bottom value */
 }
+
+
+
+
 
 .card:hover,
 .card:focus,
@@ -140,6 +169,110 @@
 .footer {
   border-color: #222;
 }
+
 .logo img {
   filter: invert(1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #f1dd05;
+  padding-left: 20px;
+}
+
+.navLink {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ffeb3b;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+.navLink:first-child {
+  margin-left: 0;
+}
+
+.navLink:hover {
+  color: #f1dd05;
+  background-color: #ffeb3b;
+}
+
+.connectWallet {
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navLinks {
+    margin-top: 0.5rem;
+    padding-left: 0;
+  }
+
+  .navLink {
+    display: block;
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+}
+
+
+.myNfts {
+  color: #fff;
+  text-decoration: none;
+}
+
+.myNfts:hover {
+  text-decoration: underline;
+  text-decoration-color: #f1dd05;
+}
+
+.yellowText {
+  color: #ffeb3b;
+}
+
+.signOutButton {
+  background-color: #ff0000;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.signOutButton:hover {
+  background-color: #cc0000;
+}
+
+.buttonLink {
+  color: #ffeb3b;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ffeb3b;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.buttonLink:hover {
+  color: #f1dd05;
+  background-color: #ffeb3b;
 }
