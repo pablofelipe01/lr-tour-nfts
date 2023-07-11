@@ -42,7 +42,7 @@ const Artwork = () => {
                     onPaymentSuccess={handlePaymentSuccess}
                     options={{
                       colorBackground: '#fefae0',
-                      colorPrimary: '#dee2d0',
+                      colorPrimary: '#f9f9f9',
                       colorText: '#e5ebdd',
                       borderRadius: 6,
                       inputBackgroundColor: '#faedcd',
